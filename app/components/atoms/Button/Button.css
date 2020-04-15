@@ -1,0 +1,25 @@
+.button {
+	margin: 0 auto;
+	width: 90px;
+	height: 36px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 36px;
+	color: var(--panel-bg-color);
+	background-color: var(--fg-color);
+	border-radius: var(--input-radius);
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: ease 0.3s;
+}
+
+.button:hover,
+.button:focus {
+	color: var(--hilite-color);
+	background-color: var(--icon-color);
+}
+
+.button:last-child {
+	margin-left: 12px;
+}

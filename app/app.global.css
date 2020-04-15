@@ -1,0 +1,69 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ @import '~@fortawesome/fontawesome-free/css/all.css';
+ @import url("https://fonts.googleapis.com/css?family=Roboto");
+ 
+ * {
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+ 
+   /* Variables - dimensions */
+   --header-height: 60px;
+   --panel-filters-width: 370px; /* content: 330xp + 2 * padding: 20px */
+   --panel-control-width: 300px; /* content: 260xp + 2 * padding: 20px */
+   --panel-header-height: 40px;
+   --panel-header-height-small: 10px;
+   --panel-radius: 10px;
+   --header-icon-size: 20px;
+   --input-radius: 4px;
+   --panel-padding-w: 18px;
+   --panel-padding-h: 16px;
+   --blur-size-curtain: 20px;
+ 
+   /* Variables - colors */
+   --main-bg-color: #262a41;
+   --curtain-color: #10141baa;
+   --panel-bg-color: #3c3f54;
+   --icon-color: #36d9d8;
+   --hilite-color: #fff;
+   --fg-color: #9497aa;
+   --shadow-color: #31344a;
+ 
+   /* miscellaneous */
+   --animation-duration: 0.2s;
+   --blur-out-curtain-duration: 0.4s;
+ }
+ 
+ @media screen and (min-width: 1600px){
+   * {
+     --panel-control-width: 370px; /* content: 260xp + 2 * padding: 20px */
+   }
+ }
+ 
+ *, *::after, *::before {
+   -webkit-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-app-region: no-drag;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   height: 100vh;
+   color: var(--fg-color);
+   background-color: var(--main-bg-color);
+   overflow: hidden;
+ }
+ 
+ li {
+   list-style: none;
+ }
+ 
+ a {
+   text-decoration: none;
+   color: var(--fg-color);
+ }
+ 
