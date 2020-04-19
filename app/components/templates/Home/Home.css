@@ -1,14 +1,56 @@
 .container {
-  position: absolute;
-  top: 30%;
-  left: 10px;
-  text-align: center;
+	width: 100vw;
+	min-height: 100vh;
+	max-height: 100vh;
 }
 
-.container h2 {
-  font-size: 5rem;
+.screenCurtain {
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--curtain-color);
+	z-index: 3000;
 }
 
-.container a {
-  font-size: 1.4rem;
+.popupWrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pageHeader {
+	height: var(--header-height);
+	display: block;
+	transition: filter ease var(--blur-out-curtain-duration);
+}
+
+.pageBody {
+	height: calc(100vh - var(--header-height));
+	transition: filter ease var(--blur-out-curtain-duration);
+}
+
+.mainContent {
+	position: relative;
+	float: left;
+	padding: 18px 0 18px;
+	width: calc(100vw - var(--panel-filters-width) - var(--panel-control-width));
+	height: 100%;
+}
+
+.leftSide,
+.rightSide {
+	position: relative;
+	float: left;
+	padding: 18px 20px 0;
+	height: 100%;
+	z-index: 100;
+}
+
+.leftSide {
+	width: var(--panel-filters-width);
+}
+
+.rightSide {
+	width: var(--panel-control-width);
 }
