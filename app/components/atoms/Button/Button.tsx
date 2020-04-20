@@ -3,7 +3,7 @@ import styles from "./Button.css";
 
 type ButtonProps = {
     children: any,
-    onClick: any
+    onClick: void
 }
 
 class Button extends Component<ButtonProps> {

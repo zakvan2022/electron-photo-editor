@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import stylesMainHeader from "./AppLogo.css";
 import imgLogo from "../../../../resources/img/icons/logo.svg";
 

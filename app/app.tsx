@@ -14,7 +14,7 @@ type Props = {
 const App = ({ store, history }: Props) => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <PhotoApp authenticated/>
+      <PhotoApp authenticated />
     </ConnectedRouter>
   </Provider>
 );

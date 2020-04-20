@@ -5,7 +5,7 @@ type CheckBoxProps = {
     name: string,
     placeholder: string,
     defaultChecked: boolean,
-    onChange: any,
+    onChange: void,
 }
 
 class CheckBox extends Component<CheckBoxProps> {

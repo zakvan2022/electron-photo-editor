@@ -8,7 +8,7 @@ type InputProps = {
     img: string,
     autoFocus: boolean,
     value: string,
-    onChange: any,
+    onChange: void,
 }
 
 class Input extends Component<InputProps> {
